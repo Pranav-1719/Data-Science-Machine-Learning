@@ -1,23 +1,25 @@
-````md
 # 📈 Stock Price Predictor
 
-A Machine Learning project that predicts stock prices using historical market data and regression models.
+A Machine Learning-based stock price forecasting system that predicts stock closing prices using historical market data and multiple regression models.
 
-This project uses stock market data from Yahoo Finance, performs preprocessing and standardization, trains a Linear Regression model, and visualizes actual vs predicted stock prices along with prediction error analysis.
+The project uses Yahoo Finance data, performs preprocessing and feature engineering, and applies Linear Regression, Random Forest Regression, and Ensemble Learning techniques to improve prediction accuracy and robustness.
 
 ---
 
 # 🚀 Features
 
-- Stock market data collection using Yahoo Finance
+- Real-time stock market data collection using Yahoo Finance
 - Data preprocessing and cleaning
 - Feature scaling using StandardScaler
-- Linear Regression model training
+- Linear Regression model implementation
+- Random Forest Regression model
+- Ensemble Learning for improved prediction accuracy
 - Train/Test dataset splitting
-- Stock price prediction
+- Stock price prediction and forecasting
+- Model evaluation using MAE, RMSE, and R² Score
 - Actual vs Predicted visualization
-- Smoothed prediction error graph
-- Time-series plotting and analysis
+- Smoothed prediction error analysis
+- Time-series plotting and trend visualization
 
 ---
 
@@ -29,7 +31,7 @@ This project uses stock market data from Yahoo Finance, performs preprocessing a
 - Scikit-Learn
 - Matplotlib
 - Seaborn
-- Yahoo Finance API
+- Yahoo Finance API (`yfinance`)
 
 ---
 
@@ -38,10 +40,10 @@ This project uses stock market data from Yahoo Finance, performs preprocessing a
 ```bash
 Stock-Price-Predictor/
 │
-├── stock_price_predictor.ipynb
+├── Stock_Price_Predictor.ipynb
 ├── requirements.txt
 └── README.md
-````
+```
 
 ---
 
@@ -52,44 +54,62 @@ Stock Data Collection
         ↓
 Data Preprocessing
         ↓
+Feature Engineering
+        ↓
 Feature Scaling
         ↓
 Train/Test Split
         ↓
 Linear Regression Model
         ↓
+Random Forest Model
+        ↓
+Ensemble Learning
+        ↓
 Prediction
         ↓
-Error Analysis
+Model Evaluation
         ↓
 Visualization
 ```
 
 ---
 
-# 📈 Model Used
+# 📈 Models Used
 
 This project currently uses:
 
-* Linear Regression
+- Linear Regression
+- Random Forest Regressor
+- Ensemble Learning Techniques
 
-The model predicts stock closing prices using:
+The models predict stock closing prices using features such as:
 
-* Open Price
-* High Price
-* Low Price
-* Trading Volume
+- Open Price
+- High Price
+- Low Price
+- Trading Volume
 
 ---
 
-# 📉 Visualizations
+# 📉 Model Performance
+
+- Improved Linear Regression accuracy
+- Ensemble-based prediction improvement
+- Mean Absolute Error (MAE) ≈ 3
+- Better robustness against market fluctuations
+
+---
+
+# 📊 Visualizations
 
 The project includes:
 
-* Scatter plots
-* Actual vs Predicted stock price graphs
-* Smoothed prediction error graphs
-* Time-series visualizations
+- Scatter plots
+- Actual vs Predicted stock price graphs
+- Smoothed prediction error graphs
+- Time-series visualizations
+- Regression performance analysis
 
 ---
 
@@ -98,7 +118,7 @@ The project includes:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Stock-Price-Predictor.git
+git clone https://github.com/Pranav-1719/Data-Science-Machine-Learning.git
 ```
 
 ## Install Required Libraries
@@ -118,7 +138,7 @@ pip install -r requirements.txt
 Open:
 
 ```bash
-stock_price_predictor.ipynb
+Stock_Price_Predictor.ipynb
 ```
 
 and run all cells.
@@ -129,7 +149,7 @@ and run all cells.
 
 Stock market data is collected using:
 
-* Yahoo Finance API (`yfinance`)
+- Yahoo Finance API (`yfinance`)
 
 ---
 
@@ -137,11 +157,20 @@ Stock market data is collected using:
 
 This project was built to:
 
-* Learn Machine Learning workflows
-* Practice financial data analysis
-* Explore stock market prediction
-* Understand regression models
-* Improve data visualization skills
+- Learn Machine Learning workflows
+- Explore financial data analysis
+- Understand regression and ensemble learning
+- Improve stock price forecasting accuracy
+- Practice data visualization and model evaluation
+- Build practical machine learning projects for real-world applications
 
-```
-```
+---
+
+# 🔮 Future Improvements
+
+- Sentiment Analysis using financial news and social media
+- Deep Learning models (LSTM/GRU)
+- Streamlit Web Application
+- Real-time stock prediction dashboard
+- Hyperparameter tuning and optimization
+- Multi-stock forecasting system
