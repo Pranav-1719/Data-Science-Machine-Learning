@@ -1,4 +1,3 @@
-````markdown
 # Customer Churn Prediction and Behavior Analysis
 
 An end-to-end customer churn analytics project focused on data collection, exploratory data analysis (EDA), preprocessing, feature engineering, and machine learning-ready dataset preparation using Python.
@@ -17,9 +16,10 @@ The project currently includes:
 - Feature engineering
 - Dataset integration
 - Correlation analysis
+- Customer-level aggregation
 - Standardization and encoding
 
-Machine learning model development and predictive analysis will be added in later stages.
+The project successfully identifies important behavioral factors influencing customer churn and prepares a machine learning-ready analytical dataset for future predictive modeling.
 
 ---
 
@@ -31,7 +31,7 @@ Dataset provided through The Forage virtual internship program.
 url = "https://cdn.theforage.com/vinternships/companyassets/Zbnc2o4ok6kD2NEXx/2kCX23cgKgCumeEam/1721851467492/Customer_Churn_Data_Large.xlsx"
 
 excel = pd.ExcelFile(url)
-````
+```
 
 ---
 
@@ -43,11 +43,14 @@ The Excel workbook contains multiple datasets related to customer behavior.
 
 Includes:
 
-* CustomerID
-* Age
-* Gender
-* MaritalStatus
-* IncomeLevel
+- CustomerID
+- Age
+- Gender
+- MaritalStatus
+- IncomeLevel
+
+Purpose:
+Analyze demographic patterns and customer attributes that may influence churn behavior.
 
 ---
 
@@ -55,10 +58,13 @@ Includes:
 
 Includes:
 
-* Transaction data
-* Amount spent
-* Product categories
-* Purchase activity
+- Transaction data
+- Amount spent
+- Product categories
+- Purchase activity
+
+Purpose:
+Analyze customer spending behavior, purchasing frequency, and financial engagement.
 
 ---
 
@@ -66,10 +72,13 @@ Includes:
 
 Includes:
 
-* Complaints
-* Feedback
-* Inquiry interactions
-* Resolution status
+- Complaints
+- Feedback
+- Inquiry interactions
+- Resolution status
+
+Purpose:
+Understand customer satisfaction, complaints, and support-related churn indicators.
 
 ---
 
@@ -77,9 +86,12 @@ Includes:
 
 Includes:
 
-* Login frequency
-* Last login date
-* Platform/service usage
+- Login frequency
+- Last login date
+- Platform/service usage
+
+Purpose:
+Measure customer engagement and platform activity.
 
 ---
 
@@ -87,93 +99,208 @@ Includes:
 
 Includes:
 
-* Customer churn status
-* Binary target variable
+- Customer churn status
+- Binary target variable
+
+Purpose:
+Serve as the target variable for churn analysis and future machine learning prediction.
 
 ---
 
 # Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* SciPy
-* Statsmodels
-* Scikit-learn
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- SciPy
+- Statsmodels
+- Scikit-learn
 
 ---
 
 # Data Preprocessing
 
-The preprocessing pipeline currently includes:
+The preprocessing pipeline included several stages to ensure high-quality analytical data.
 
 ## Data Cleaning
 
-* Missing value analysis
-* Duplicate value detection
-* Datatype inspection
+Performed:
+- Missing value analysis
+- Duplicate value detection
+- Datatype inspection
+
+Results:
+- No significant missing value issues detected
+- No major duplicate records identified
+
+---
 
 ## Encoding
 
-* Label encoding
-* One-hot encoding for categorical variables
+Categorical variables were transformed into numerical format using:
+
+### Label Encoding
+Used for:
+- Gender
+- IncomeLevel
+
+### One-Hot Encoding
+Used for:
+- MaritalStatus
+- ProductCategory
+- InteractionType
+- ResolutionStatus
+- ServiceUsage
+
+This conversion ensured compatibility with statistical analysis and future machine learning algorithms.
+
+---
 
 ## Standardization
 
-* Numerical feature scaling using `StandardScaler`
+Numerical features were standardized using:
 
-## Feature Engineering
+```python
+StandardScaler()
+```
 
-* Total transaction spending
-* Transaction counts
-* Average customer spending
-* Interaction counts
-* Complaint counts
-* Unresolved issue counts
+Standardized variables included:
+- AmountSpent
+- LoginFrequency
+- Age
+- TotalSpent
+- AvgSpent
+- TransactionCount
+- InteractionCount
+- ComplaintCount
+- UnresolvedCount
 
-## Dataset Integration
+---
+
+# Feature Engineering
+
+To improve analytical quality, several behavioral features were engineered.
+
+## Transaction Features
+
+Generated:
+- TotalSpent
+- TransactionCount
+- AvgSpent
+
+These variables summarize customer purchasing behavior.
+
+---
+
+## Customer Interaction Features
+
+Generated:
+- InteractionCount
+- ComplaintCount
+- UnresolvedCount
+
+These features capture customer dissatisfaction and support engagement.
+
+---
+
+## Customer-Level Aggregation
 
 All datasets were merged using:
 
-* `CustomerID`
+```python
+CustomerID
+```
 
-to create a customer-level analytical dataset.
+This created a unified customer-level dataset combining:
+- demographic information
+- spending behavior
+- customer support interactions
+- service usage activity
+- churn status
 
 ---
 
 # Exploratory Data Analysis (EDA)
 
-EDA currently includes:
+EDA was conducted to identify trends, behavioral patterns, and relationships associated with customer churn.
 
-* Statistical summaries
-* Distribution analysis
-* Correlation analysis
-* Customer behavior analysis
-* Transaction behavior analysis
-* Service interaction analysis
-* Churn-related feature exploration
+The analysis included:
+- statistical summaries
+- churn distribution analysis
+- spending behavior analysis
+- login activity analysis
+- complaint analysis
+- correlation analysis
+
+---
+
+## Key EDA Findings
+
+### Churn Distribution
+
+The dataset showed that most customers remained active while a smaller proportion churned, indicating moderate class imbalance.
+
+---
+
+### Login Frequency Analysis
+
+Customers with lower login frequency demonstrated higher churn tendency, suggesting reduced customer engagement may contribute to customer attrition.
+
+---
+
+### Spending Behavior Analysis
+
+Customers with lower spending activity and fewer transactions showed increased likelihood of churn.
+
+Higher transaction activity generally indicated stronger customer retention.
+
+---
+
+### Complaint and Resolution Analysis
+
+Customers with higher complaint counts and unresolved customer service issues demonstrated greater churn probability.
+
+This suggests customer support quality strongly influences retention.
+
+---
+
+### Correlation Analysis
+
+Behavioral features demonstrated stronger relationships with churn compared to demographic features.
+
+Important observations included:
+- negative relationship between LoginFrequency and churn
+- positive relationship between complaint-related variables and churn
+- moderate relationship between transaction activity and customer retention
 
 ---
 
 # Current Project Status
 
-Completed:
+## Completed
 
-* Data collection
-* Data preprocessing
-* Dataset merging
-* Feature engineering
-* Exploratory Data Analysis (EDA)
+- Data collection
+- Data preprocessing
+- Data cleaning
+- Feature engineering
+- Dataset merging
+- Customer-level aggregation
+- Exploratory Data Analysis (EDA)
+- Correlation analysis
+- Machine learning-ready dataset preparation
 
-Upcoming:
+---
 
-* Machine learning model building
-* Churn prediction
-* Model evaluation
-* Feature importance analysis
-* Business insights generation
+## Upcoming
+
+- Machine learning model development
+- Churn prediction modeling
+- Model evaluation
+- Feature importance analysis
+- Hyperparameter optimization
+- Business recommendation system
 
 ---
 
@@ -186,6 +313,7 @@ Customer-Churn-Prediction-and-Behavior-Analysis/
 ├── notebooks/
 ├── images/
 ├── cleaned_dataset/
+├── reports/
 ├── README.md
 └── churn_analysis.ipynb
 ```
@@ -194,17 +322,40 @@ Customer-Churn-Prediction-and-Behavior-Analysis/
 
 # Key Objectives
 
-* Understand customer churn behavior
-* Engineer useful behavioral features
-* Prepare machine learning-ready datasets
-* Identify important churn indicators
-* Build predictive churn models
+- Understand customer churn behavior
+- Analyze customer engagement patterns
+- Engineer meaningful behavioral features
+- Identify important churn indicators
+- Prepare machine learning-ready datasets
+- Build predictive churn models
+
+---
+
+# Key Insights
+
+The analysis identified several important churn indicators:
+
+- Customers with lower login frequency were more likely to churn.
+- Unresolved complaints significantly increased churn probability.
+- Lower transaction activity correlated with customer attrition.
+- Behavioral features were more informative than demographic variables.
+- Customer engagement played a major role in retention.
+
+---
+
+# Future Improvements
+
+Future stages of the project may include:
+
+- Machine learning model training
+- Feature importance analysis
+- Predictive churn dashboards
+- Customer segmentation
+- Retention strategy recommendations
+- Model deployment
 
 ---
 
 # Author
 
 Pranav
-
-```
-```
