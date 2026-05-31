@@ -522,7 +522,6 @@ These insights can help organizations improve retention strategies, reduce reven
 Customer-Churn-Prediction/
 │
 ├── Customer Churn Prediction and Behavior Analysis.ipynb
-├── model.csv
 └── README.md
 ```
 
