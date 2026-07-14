@@ -38,7 +38,7 @@ class absenteeism_model():
       
         def __init__(self, model_file, scaler_file):
             # read the 'model' and 'scaler' files which were saved
-            with open('model','rb') as model_file, open('scaler', 'rb') as scaler_file:
+            with open('model', 'rb') as model_file, open('scaler', 'rb') as scaler_file:
                 self.reg = pickle.load(model_file)
                 self.scaler = pickle.load(scaler_file)
                 self.data = None

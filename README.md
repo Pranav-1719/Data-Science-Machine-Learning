@@ -1,229 +1,275 @@
-# 🚀 Data Science, Machine Learning & Deep Learning
+# Data Science & Machine Learning Portfolio
 
-A collection of Data Science, Machine Learning, Deep Learning, and AI projects built through hands-on learning and practical implementation.
+A collection of Data Science, Machine Learning, and Deep Learning projects demonstrating skills in data preprocessing, exploratory data analysis, predictive modeling, neural networks, and real-world business problem solving.
 
-This repository serves as a portfolio of projects covering the complete machine learning pipeline—from data preprocessing and exploratory analysis to predictive modeling and deep learning applications.
+## Overview
 
-## 🎯 Areas of Focus
+This repository contains end-to-end projects covering:
 
-* Data Analysis & Visualization
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
 * Machine Learning
 * Deep Learning
+* Model Evaluation
 * Predictive Analytics
-* Ensemble Learning
+* Business Case Studies
+* Deployment Preparation
+
+The projects are implemented using Python and industry-standard libraries such as Pandas, NumPy, Scikit-learn, TensorFlow, and Keras.
+
+---
+
+## Repository Structure
+
+```text
+Data-Science-Machine-Learning/
+│
+├── Absenteeism_Business_case/
+│   ├── Absenteeism.ipynb
+│   ├── Absenteeism_Logistic_Regression.ipynb
+│   ├── Absenteeism_Integration.ipynb
+│   ├── absenteeism_module.py
+│   ├── model
+│   ├── scaler
+│   └── ReadMe.md
+│
+├── Customer-Churn-Prediction/
+│   │
+│   ├── Customer_Churn_Prediction_and_Behavior_Analysis.ipynb
+│   ├── model.csv
+│   └── ReadMe.md
+│
+├── Deep-Learning/
+│   │
+│   ├── Audiobooks_Business_case/
+│   │   ├── Audiobooks_Preprocessing.ipynb
+│   │   ├── Audiobooks_Machine_Learning.ipynb
+│   │   └── ReadMe.md
+│   │
+│   ├── MNIST_Problem/
+│   │   ├── MNIST_Problem.ipynb
+│   │   └── ReadMe.md
+│   │
+│   ├── demo.ipynb
+│   ├── tensorflow_practice1.ipynb
+│   └── TF_intro.npz
+│
+├── Stock-Price-Predictor/
+│   ├── Stock_Price_Predictor.ipynb
+│   ├── Interface.py
+│   └── README.md
+│
+├── LICENSE
+└── README.md
+```
+
+---
+
+## Featured Projects
+
+### Employee Absenteeism Prediction
+
+Business analytics project that predicts excessive employee absenteeism using Logistic Regression.
+
+**Key Skills**
+
+* Data Preprocessing
 * Feature Engineering
-* Customer Analytics
-* Financial & Quantitative Modeling
-* Computer Vision
-* Business Intelligence
-* Artificial Intelligence
-
----
-
-# 📂 Projects
-
-## 📈 Stock Price Predictor
-
-**Folder:** `Stock-Price-Predictor/`
-
-A machine learning-based stock forecasting system that predicts stock closing prices using historical market data and multiple regression models.
-
-### Features
-
-* Stock market data collection using Yahoo Finance
-* Data preprocessing and feature engineering
-* Feature scaling using StandardScaler
-* Linear Regression implementation
-* Random Forest Regression model
-* Ensemble Learning techniques
-* Stock price forecasting
-* Model evaluation using MAE, RMSE, and R² Score
-* Actual vs Predicted visualization
-* Time-series analysis and trend visualization
-
-### Models Used
-
-* Linear Regression
-* Random Forest Regressor
-* Ensemble Learning
-
-### Results
-
-* Improved regression accuracy
-* MAE ≈ 3
-* Enhanced prediction robustness and stability
-
----
-
-## 👥 Customer Churn Prediction & Behavior Analysis
-
-**Folder:** `Customer-Churn-Prediction/`
-
-An end-to-end customer analytics project focused on understanding customer behavior, identifying churn patterns, and preparing a machine-learning-ready dataset for future predictive modeling.
-
-### Project Progress
-
-✅ Data Collection
-
-✅ Data Cleaning & Preprocessing
-
-✅ Exploratory Data Analysis (EDA)
-
-✅ Feature Engineering
-
-✅ Dataset Preparation
-
-🔄 Machine Learning Model Development
-
-🔄 Model Evaluation & Optimization
-
-🔄 Dashboard & Deployment
-
-### Features
-
-* Missing value handling
-* Outlier detection and treatment
-* Customer segmentation analysis
-* Churn behavior analysis
-* Correlation analysis
-* Feature engineering
-* Data visualization
-* Machine learning-ready dataset generation
-
-### Planned Models
-
+* Custom Scikit-learn Transformers
 * Logistic Regression
-* Random Forest Classifier
-* XGBoost
-* Gradient Boosting Models
+* Odds Ratio Analysis
+* Predictive Analytics
 
----
-
-## 🧠 Deep Learning Practice
-
-**Folder:** `Deep-Learning/`
-
-A dedicated collection of deep learning experiments, implementations, and projects built using TensorFlow and Keras.
-
-### Completed Projects
-
-#### 📚 Audiobooks Business Case
-
-An end-to-end deep learning workflow focused on predicting customer purchasing behavior from audiobook platform data.
-
-**Key Concepts Covered**
-
-* Data preprocessing
-* Class balancing
-* Feature scaling
-* Dataset splitting
-* NPZ dataset generation
-* Neural network preparation
-* TensorFlow workflow fundamentals
-
-**Project Status**
-
-✅ Completed
-
-### Current Deep Learning Topics
-
-* Artificial Neural Networks (ANN)
-* TensorFlow Fundamentals
-* Dataset Preparation Pipelines
-* Model Training & Evaluation
-* MNIST Digit Classification
-
-### Upcoming Topics
-
-* Convolutional Neural Networks (CNN)
-* Transfer Learning
-* Recurrent Neural Networks (RNN)
-* LSTM Networks
-* Natural Language Processing (NLP)
-* Transformers
-* Generative AI
-* Model Deployment
-
----
-
-# 🛠️ Technologies & Libraries
-
-### Programming
+**Technologies**
 
 * Python
-
-### Data Science
-
+* Pandas
 * NumPy
+* Scikit-learn
+
+---
+
+### Audiobooks Customer Purchase Prediction
+
+Deep Learning project that predicts whether audiobook customers are likely to make repeat purchases.
+
+**Key Skills**
+
+* Data Balancing
+* Feature Scaling
+* Neural Networks
+* Customer Analytics
+* Deep Learning
+
+**Technologies**
+
+* TensorFlow
+* Keras
+* NumPy
+* Python
+
+---
+
+### MNIST Handwritten Digit Classification
+
+Computer Vision project using Deep Learning to recognize handwritten digits from image data.
+
+**Key Skills**
+
+* Image Classification
+* Neural Networks
+* TensorFlow
+* Deep Learning
+* Computer Vision
+
+**Technologies**
+
+* TensorFlow
+* Keras
+* TensorFlow Datasets
+
+---
+
+### Stock Price Predictor
+
+Machine Learning application for stock market forecasting and financial data analysis.
+
+**Key Skills**
+
+* Time Series Analysis
+* Financial Data Processing
+* Predictive Modeling
+* Data Visualization
+
+**Technologies**
+
+* Python
+* Pandas
+* NumPy
+* Machine Learning
+
+---
+
+### Customer Churn Prediction
+
+Predictive analytics project focused on identifying customers likely to discontinue a service.
+
+**Key Skills**
+
+* Classification Models
+* Feature Engineering
+* Customer Analytics
+* Model Evaluation
+
+**Technologies**
+
+* Python
+* Scikit-learn
 * Pandas
 
-### Visualization
+---
 
-* Matplotlib
-* Seaborn
+## Technologies & Tools
+
+### Programming Languages
+
+* Python
+* SQL
+
+### Data Analysis
+
+* Pandas
+* NumPy
 
 ### Machine Learning
 
-* Scikit-Learn
+* Scikit-learn
+* Logistic Regression
+* Classification Models
+* Model Evaluation
 
 ### Deep Learning
 
 * TensorFlow
 * Keras
+* Neural Networks
 
-### Development Environment
+### Visualization
+
+* Matplotlib
+* Seaborn
+* Tableau
+
+### Development Tools
 
 * Jupyter Notebook
+* Git
+* GitHub
 
 ---
 
-# 📚 Learning Objectives
+## Learning Areas Covered
 
-This repository is focused on developing practical expertise in:
-
-* Data Cleaning
-* Exploratory Data Analysis
-* Feature Engineering
+* Data Science
 * Machine Learning
 * Deep Learning
-* Predictive Modeling
-* Neural Networks
+* Computer Vision
 * Business Analytics
-* Quantitative Analysis
-* Real-World Problem Solving
+* Predictive Modeling
+* Statistical Analysis
+* Customer Analytics
+* HR Analytics
+* Financial Analytics
 
 ---
 
-# 🚀 Future Roadmap
+## Getting Started
 
-### Machine Learning
+### Clone the Repository
 
-* Advanced Ensemble Methods
-* Time Series Forecasting
-* Explainable AI (XAI)
-* Model Deployment
+```bash
+git clone https://github.com/Pranav-1719/Data-Science-Machine-Learning.git
+```
 
-### Deep Learning
+### Install Dependencies
 
-* CNN-based Computer Vision Projects
-* NLP Applications
-* Transfer Learning
-* Transformers
-* Large Language Models (LLMs)
-* End-to-End AI Applications
+```bash
+pip install pandas numpy scikit-learn tensorflow matplotlib seaborn
+```
 
-### Data Science
+### Launch Jupyter Notebook
 
-* Advanced Business Analytics
-* Dashboard Development
-* Data Engineering Pipelines
+```bash
+jupyter notebook
+```
 
 ---
 
-# 📌 Author
+## Future Improvements
+
+* Advanced Deep Learning Architectures
+* Natural Language Processing Projects
+* Reinforcement Learning
+* MLOps & Model Deployment
+* Cloud-Based Machine Learning Workflows
+* Large Language Model Applications
+
+---
+
+## Author
 
 **Pranav Sankpal**
 
-Engineering Student | Data Science, Machine Learning & Deep Learning Enthusiast
+Computer Science Student focused on Data Science, Machine Learning, Deep Learning, Quantitative Analysis, and Software Development.
 
-Passionate about Artificial Intelligence, Quantitative Finance, Software Development, and building practical AI solutions.
+### Connect
+
+* GitHub: https://github.com/Pranav-1719
+* LinkedIn: https://www.linkedin.com/in/pranav-sankpal-594b632a9
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
