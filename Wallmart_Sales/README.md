@@ -49,26 +49,29 @@ The cleaned dataset is also exported for Tableau dashboard development.
 
 ## Project Structure
 
+
 ```
 Walmart_Sales/
 │
-├── Images/
-│   ├── histogram_weekly_sales.png
-│   ├── boxplot_weekly_sales.png
-│   ├── temperature_vs_sales.png
-│   ├── fuel_price_vs_sales.png
-│   ├── cpi_vs_sales.png
-│   ├── unemployment_vs_sales.png
-│   ├── holiday_vs_sales.png
-│   ├── monthly_sales_trend.png
-│   ├── store_wise_sales.png
-│   └── correlation_heatmap.png
+├── data/                            
+│   ├── Walmart_Sales.csv
+│   └── Walmart_Sales_Cleaned.csv
 │
-├── linear_regression.ipynb
+├── images/                           
+│   ├── weekly_sales_distribution.png
+│   ├── Weekly_sales_Boxplot.png
+│   ├── Temperature_vs_Weekly_Sales.png
+│   ├── Fuel_Price_vs_Weekly_Sales.png
+│   ├── CPI_vs_Weekly_Sales.png
+│   ├── Unemployment_vs_Weekly_Sales.png
+│   ├── Holiday_vs_Weekly_Sales.png
+│   ├── Monthly_Sales_Trend.png
+│   ├── Store_Wise_Sales.png
+│   └── Heatmap.png
 │
-├── Walmart_Sales_Cleaned.csv
-│
-└── README.md
+├── Linear_Regression.ipynb           
+├── requirements.txt          
+└── ReadME.md                         
 ```
 
 ---
