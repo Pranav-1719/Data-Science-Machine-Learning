@@ -40,7 +40,7 @@ The project uses Yahoo Finance data, performs preprocessing and feature engineer
 ```bash
 Stock-Price-Predictor/
 │
-├── Stock_Price_Predictor.ipynb
+├── Stock_Price_Prediction.ipynb
 ├── requirements.txt
 └── README.md
 ```
@@ -138,7 +138,7 @@ pip install -r requirements.txt
 Open:
 
 ```bash
-Stock_Price_Predictor.ipynb
+Stock_Price_Prediction.ipynb
 ```
 
 and run all cells.
