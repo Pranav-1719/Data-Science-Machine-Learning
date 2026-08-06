@@ -2,6 +2,9 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from pathlib import Path
+import os
+
 
 # Page Layout
 st.set_page_config(
@@ -10,11 +13,22 @@ st.set_page_config(
     layout="wide"
 )
 
-"""# Load model
-@st.cache_resource
-def load_model():
-    return joblib.load("./model/XGBoost_model.pkl")
-"""
+BASE = Path(__file__).resolve().parent
+
+st.write("BASE:", BASE)
+st.write("cwd:", os.getcwd())
+
+for root, dirs, files in os.walk(BASE):
+    st.write(root)
+    for f in files:
+        st.write("   ", f)
+
+MODEL = BASE / "model" / "XGBoost_model.pkl"
+st.write("MODEL:", MODEL)
+st.write("Exists:", MODEL.exists())
+
+st.stop()
+
 model = joblib.load("./model/XGBoost_model.pkl")
 
 # Header
