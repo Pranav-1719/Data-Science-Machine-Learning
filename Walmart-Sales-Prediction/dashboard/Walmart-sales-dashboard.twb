@@ -1,0 +1,2248 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Walmart_Sales_Cleaned' inline='true' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Walmart_Sales_Cleaned' name='textscan.1t74zny1fg25bz1cgoq0d0maeukn'>
+            <connection class='textscan' directory='C:/Users/sankp/Downloads/python/Data-Science-Machine-Learning/Walmart-Sales-Prediction/data' filename='Walmart_Sales_Cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1t74zny1fg25bz1cgoq0d0maeukn' name='Walmart_Sales_Cleaned.csv' table='[Walmart_Sales_Cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='integer' name='Month' ordinal='1' />
+            <column datatype='integer' name='Week' ordinal='2' />
+            <column datatype='integer' name='Quarter' ordinal='3' />
+            <column datatype='integer' name='Store' ordinal='4' />
+            <column datatype='integer' name='Holiday_Flag' ordinal='5' />
+            <column datatype='real' name='Temperature' ordinal='6' />
+            <column datatype='real' name='Fuel_Price' ordinal='7' />
+            <column datatype='real' name='CPI' ordinal='8' />
+            <column datatype='real' name='Unemployment' ordinal='9' />
+            <column datatype='real' name='Weekly_Sales' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Week]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Week</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Store</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Store]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Store</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Holiday_Flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Holiday_Flag]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Holiday_Flag</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel_Price]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Fuel_Price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CPI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CPI]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>CPI</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Unemployment</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly_Sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weekly_Sales]</local-name>
+            <parent-name>[Walmart_Sales_Cleaned.csv]</parent-name>
+            <remote-alias>Weekly_Sales</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Holiday Type' datatype='string' name='[Calculation_2740563729866752]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Holiday_Flag] = 1 THEN&#13;&#10;    &quot;Holiday&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Non-Holiday&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Fuel Price' datatype='real' name='[Fuel_Price]' role='measure' type='quantitative' />
+      <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Week]' role='dimension' type='quantitative' />
+      <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Walmart_Sales_Cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]' role='measure' type='quantitative' />
+      <group caption='Action (Store)' hidden='true' name='[Action (Store)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Store]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/sankp/AppData/Local/Temp/TableauTemp/#TableauTemp_1mxrkqv0xhzprv13z23iv1vkw2ud.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/05/2026 06:15:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Week</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Week</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Store</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Store]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Store</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>45</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Holiday_Flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Holiday_Flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Holiday_Flag</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temperature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Temperature</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2553</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fuel_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fuel_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fuel_Price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1003</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CPI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CPI]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CPI</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1683</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unemployment</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>420</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekly_Sales</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weekly_Sales]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekly_Sales</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Walmart_Sales_Cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6435</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Year' />
+        <field-sort-custom-order field='Month' />
+        <field-sort-custom-order field='Week' />
+        <field-sort-custom-order field='Quarter' />
+        <field-sort-custom-order field='Store' />
+        <field-sort-custom-order field='Holiday_Flag' />
+        <field-sort-custom-order field='Calculation_2740563729866752' />
+        <field-sort-custom-order field='Temperature' />
+        <field-sort-custom-order field='Fuel_Price' />
+        <field-sort-custom-order field='CPI' />
+        <field-sort-custom-order field='Unemployment' />
+        <field-sort-custom-order field='Weekly_Sales' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Walmart_Sales_Cleaned.csv' id='Walmart_Sales_Cleaned.csv_F8E5852072C044379B2747A66B1D9EF7'>
+            <properties context=''>
+              <relation connection='textscan.1t74zny1fg25bz1cgoq0d0maeukn' name='Walmart_Sales_Cleaned.csv' table='[Walmart_Sales_Cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='integer' name='Month' ordinal='1' />
+                  <column datatype='integer' name='Week' ordinal='2' />
+                  <column datatype='integer' name='Quarter' ordinal='3' />
+                  <column datatype='integer' name='Store' ordinal='4' />
+                  <column datatype='integer' name='Holiday_Flag' ordinal='5' />
+                  <column datatype='real' name='Temperature' ordinal='6' />
+                  <column datatype='real' name='Fuel_Price' ordinal='7' />
+                  <column datatype='real' name='CPI' ordinal='8' />
+                  <column datatype='real' name='Unemployment' ordinal='9' />
+                  <column datatype='real' name='Weekly_Sales' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+      <datasources>
+        <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+        <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+        <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' included-values='in-range'>
+        <min>0</min>
+        <max>1</max>
+      </filter>
+      <filter class='quantitative' column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]' included-values='in-range' />
+      <filter class='quantitative' column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' included-values='in-range'>
+        <min>1</min>
+        <max>45</max>
+      </filter>
+      <filter class='quantitative' column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' included-values='in-range'>
+        <min>2010</min>
+        <max>2012</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Store Filter' name='[Action1_FD09A184767E481BB97251A02A32E3DB]'>
+      <source type='sheet' worksheet='Total Weekly Sales by Store' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Walmart Sales Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_4C4444EE2651479D981C8CBC88341C6E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Walmart Sales Dashboard' type='sheet' worksheet='Total Weekly Sales by Store' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Walmart Sales Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average CPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average CPI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column datatype='real' name='[CPI]' role='measure' type='quantitative' />
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[CPI]' derivation='Avg' name='[avg:CPI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' value='center' />
+            <format attr='vertical-align' data-class='total' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:CPI:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{74728FA3-34EF-4742-832F-78EA505A222B}' />
+    </worksheet>
+    <worksheet name='Average Weekly Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average Weekly Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='Avg' name='[avg:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]' value='C1033%' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B3419856-9F04-4DE3-9274-FF2B2F540174}' />
+    </worksheet>
+    <worksheet name='CPI vs Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column datatype='real' name='[CPI]' role='measure' type='quantitative' />
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[CPI]' derivation='None' name='[none:CPI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='None' name='[none:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]' scope='rows' value='Weekly Sales' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#75a1c7</color>
+                <color>#84a9ca</color>
+                <color>#94b2cd</color>
+                <color>#a5bcd0</color>
+                <color>#b6c5d3</color>
+                <color>#c7cfd6</color>
+                <color>#d9d9d9</color>
+                <color>#b3bfca</color>
+                <color>#91a7bc</color>
+                <color>#7290ae</color>
+                <color>#577b9f</color>
+                <color>#3f6891</color>
+                <color>#2a5783</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#e15759d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:CPI:qk]</cols>
+      </table>
+      <simple-id uuid='{23BCD034-FD3B-49D9-9C78-B39583859F88}' />
+    </worksheet>
+    <worksheet name='Fuel Price vs Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Fuel Price' datatype='real' name='[Fuel_Price]' role='measure' type='quantitative' />
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Fuel_Price]' derivation='None' name='[none:Fuel_Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='None' name='[none:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]' scope='rows' value='Weekly Sales' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#e15759d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Fuel_Price:qk]</cols>
+      </table>
+      <simple-id uuid='{00A4474E-84DA-47D6-9A2F-E3FFD77BE5DE}' />
+    </worksheet>
+    <worksheet name='Holiday Impact'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Type' datatype='string' name='[Calculation_2740563729866752]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Holiday_Flag] = 1 THEN&#13;&#10;    &quot;Holiday&quot;&#13;&#10;ELSE&#13;&#10;    &quot;Non-Holiday&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='Avg' name='[avg:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2740563729866752]' derivation='None' name='[none:Calculation_2740563729866752:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]' field-type='quantitative' major-origin='0.0' major-spacing='200000.0' max='1201515.1522376321' min='-131818.24467398907' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]' scope='rows' value='Average Weekly Sales' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]' value='C1033%' />
+            <format attr='width' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]' value='245' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='490' />
+                <format attr='maxwidth' value='490' />
+                <format attr='minheight' value='405' />
+                <format attr='maxheight' value='405' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]</field>
+                  <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1041256.3802088526</value>
+                <value>&quot;Non-Holiday&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[avg:Weekly_Sales:qk]</field>
+                  <field>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Calculation_2740563729866752:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1122887.8923555552</value>
+                <value>&quot;Holiday&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{3C3B6A88-12EC-412B-BC78-2D347B5C7929}' />
+    </worksheet>
+    <worksheet name='Monthly Sales Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='Sum' name='[sum:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' scope='rows' value='Total Sales ($)' />
+            <encoding attr='space' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' field-type='quantitative' max='303910850.41165251' min='140000000.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Month:qk]</cols>
+      </table>
+      <simple-id uuid='{369C060F-9FEB-4BDB-913D-167F1B87E06C}' />
+    </worksheet>
+    <worksheet name='Temperature vs Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='None' name='[none:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='None' name='[none:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]' scope='rows' value='Weekly Sales' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#e15759d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Temperature:qk]</cols>
+      </table>
+      <simple-id uuid='{6FFCC268-3844-4FDB-BBD3-2E4D1BE4F0EF}' />
+    </worksheet>
+    <worksheet name='Total Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='Sum' name='[sum:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' value='C1033%' />
+            <format attr='font-size' value='12' />
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{792721ED-B124-4E12-8DC3-C66D733533F5}' />
+    </worksheet>
+    <worksheet name='Total Stores'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Store]' derivation='CountD' name='[ctd:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[ctd:Store:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C6B0BB5D-517D-4F9E-86FE-DEC5A63C7AD4}' />
+    </worksheet>
+    <worksheet name='Total Weekly Sales by Store'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='Sum' name='[sum:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:ok]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Weekly_Sales])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Store:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' field-type='quantitative' min='-7687710.3557924181' range-type='fixedmin' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' scope='cols' value='Weekly Sales' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]' value='C1033%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='904' />
+                <format attr='maxwidth' value='904' />
+                <format attr='minheight' value='900' />
+                <format attr='maxheight' value='900' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:ok]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[sum:Weekly_Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{BA6C5AB5-1F0B-4BD2-A7C2-8061DC03AAC7}' />
+    </worksheet>
+    <worksheet name='Unemployment vs Sales '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+            <column datatype='real' name='[CPI]' role='measure' type='quantitative' />
+            <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+            <column datatype='real' default-format='C1033%' name='[Weekly_Sales]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[CPI]' derivation='None' name='[none:CPI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weekly_Sales]' derivation='None' name='[none:Weekly_Sales:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]</column>
+            <column>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]' scope='rows' value='Weekly Sales' />
+            <format attr='height' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:CPI:qk]' value='61' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#75a1c7</color>
+                <color>#84a9ca</color>
+                <color>#94b2cd</color>
+                <color>#a5bcd0</color>
+                <color>#b6c5d3</color>
+                <color>#c7cfd6</color>
+                <color>#d9d9d9</color>
+                <color>#b3bfca</color>
+                <color>#91a7bc</color>
+                <color>#7290ae</color>
+                <color>#577b9f</color>
+                <color>#3f6891</color>
+                <color>#2a5783</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' />
+              <lod column='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='3' />
+                <format attr='stroke-color' value='#e15759d0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Weekly_Sales:qk]</rows>
+        <cols>[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:CPI:qk]</cols>
+      </table>
+      <simple-id uuid='{5FA1CD29-9927-45B1-B409-4CA52C9DE01C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Walmart Sales Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Walmart_Sales_Cleaned' name='federated.1npjtui1qsuves1a3x4ua05ul9u2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1npjtui1qsuves1a3x4ua05ul9u2'>
+        <column caption='Holiday Flag' datatype='integer' name='[Holiday_Flag]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+        <column aggregation='Sum' datatype='integer' name='[Store]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Holiday_Flag]' derivation='None' name='[none:Holiday_Flag:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Quarter]' derivation='None' name='[none:Quarter:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Store]' derivation='None' name='[none:Store:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98120' id='15' param='horz' type-v2='layout-flow' w='99034' x='483' y='940'>
+            <zone fixed-size='1473' h='98120' id='36' is-fixed='true' type-v2='layout-basic' w='86904' x='483' y='940'>
+              <zone h='12687' id='3' param='vert' type-v2='layout-flow' w='86904' x='483' y='940'>
+                <zone h='12687' id='34' param='horz' type-v2='layout-flow' w='86904' x='483' y='940'>
+                  <zone h='12687' id='35' is-scaled='1' param='C:/Users/sankp/Downloads/wallmart_logo-removebg-preview.png' type-v2='bitmap' w='11949' x='483' y='940'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='9' />
+                      <format attr='margin' value='20' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='1226' forceUpdate='true' h='12687' id='4' is-fixed='true' type-v2='text' w='74955' x='12432' y='940'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#0c72bf' fontname='Cascadia Code SemiBold' fontsize='18'>Walmart Weekly Sales Dashboard</run>
+                      <run>Æ&#10;</run>
+                      <run fontcolor='#555555' fontname='Benton Sans Book' fontsize='12'>Sales Performance Analysis using Tableau</run>
+                      <run>Æ&#10;</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#f28e2b' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='2' />
+                      <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                      <format attr='margin' value='4' />
+                      <format attr='margin-right' value='12' />
+                      <format attr='padding' value='10' />
+                      <format attr='background-color' value='#f5eddcd6' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='85433' id='38' is-fixed='true' type-v2='layout-basic' w='86904' x='483' y='13627'>
+                <zone h='13041' id='37' param='vert' type-v2='layout-flow' w='86904' x='483' y='13627'>
+                  <zone fixed-size='175' h='13041' id='5' is-fixed='true' param='horz' type-v2='layout-flow' w='86904' x='483' y='13627'>
+                    <zone h='13041' id='6' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='86904' x='483' y='13627'>
+                      <zone h='13044' id='7' name='Total Sales' w='21726' x='483' y='13631'>
+                        <layout-cache cell-count-w='1' fixed-size-h='78' type-h='fixed' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#59a14f' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                          <format attr='margin' value='12' />
+                          <format attr='background-color' value='#f7faf0' />
+                        </zone-style>
+                      </zone>
+                      <zone h='13044' id='11' param='horz' type-v2='layout-flow' w='21726' x='22209' y='13631'>
+                        <zone fixed-size='355' h='13044' id='8' is-fixed='true' name='Average Weekly Sales' w='21726' x='22209' y='13631'>
+                          <layout-cache cell-count-w='1' non-cell-size-w='21' type-h='cell' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#59a14f' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                            <format attr='margin' value='12' />
+                            <format attr='padding-bottom' value='0' />
+                            <format attr='background-color' value='#f7faf0' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone fixed-size='172' h='13044' id='9' is-fixed='true' name='Total Stores' w='21726' x='43935' y='13631'>
+                        <layout-cache fixed-size-h='78' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                          <format attr='margin' value='12' />
+                          <format attr='background-color' value='#f7faf0' />
+                        </zone-style>
+                      </zone>
+                      <zone fixed-size='492' h='13044' id='10' is-fixed='true' name='Average CPI' w='21726' x='65661' y='13631'>
+                        <layout-cache fixed-size-h='78' type-h='fixed' type-w='fixed' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                          <format attr='margin' value='12' />
+                          <format attr='background-color' value='#f7faf0' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='72392' id='39' param='vert' type-v2='layout-flow' w='86904' x='483' y='26668'>
+                  <zone fixed-size='584' h='68625' id='31' is-fixed='true' type-v2='layout-basic' w='86904' x='483' y='26668'>
+                    <zone h='35719' id='12' param='vert' type-v2='layout-flow' w='43604' x='43783' y='26668'>
+                      <zone fixed-size='303' h='35719' id='13' is-fixed='true' name='Monthly Sales Trend' w='43604' x='43783' y='26668'>
+                        <layout-cache minheight='213' minwidth='263' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='32906' id='40' param='vert' type-v2='layout-flow' w='43604' x='43783' y='62387'>
+                      <zone h='32906' id='19' name='Holiday Impact' w='43604' x='43783' y='62387'>
+                        <layout-cache cell-count-w='2' has-max-size-h='true' maxheight='500' minheight='500' non-cell-size-w='145' type-h='scalable' type-w='cell' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                    <zone h='68625' id='42' param='horz' type-v2='layout-flow' w='43300' x='483' y='26668'>
+                      <zone fixed-size='721' h='68625' id='18' is-fixed='true' name='Total Weekly Sales by Store' w='43300' x='483' y='26668'>
+                        <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='201' h='98120' id='14' is-fixed='true' param='vert' type-v2='layout-flow' w='12130' x='87387' y='940'>
+              <zone h='8578' id='16' name='Monthly Sales Trend' pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' type-v2='color' w='12130' x='87387' y='940'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8578' id='25' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='9518'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8578' id='26' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='18096'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8578' id='27' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='26674'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8578' id='28' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='35252'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98120' id='47' param='vert' type-v2='layout-flow' w='99034' x='483' y='940'>
+                <zone fixed-size='61' h='12687' id='35' is-fixed='true' is-scaled='1' param='C:/Users/sankp/Downloads/wallmart_logo-removebg-preview.png' type-v2='bitmap' w='11949' x='483' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='9' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='1226' forceUpdate='true' h='12687' id='4' type-v2='text' w='74955' x='12432' y='940'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#0c72bf' fontname='Cascadia Code SemiBold' fontsize='18'>Walmart Weekly Sales Dashboard</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#555555' fontname='Benton Sans Book' fontsize='12'>Sales Performance Analysis using Tableau</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#f28e2b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='8' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f5eddcd6' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='13044' id='7' is-fixed='true' name='Total Sales' w='21726' x='483' y='13631'>
+                  <layout-cache cell-count-w='1' fixed-size-h='78' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#59a14f' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f7faf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='13044' id='8' is-fixed='true' name='Average Weekly Sales' w='21726' x='22209' y='13631'>
+                  <layout-cache cell-count-w='1' non-cell-size-w='21' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#59a14f' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f7faf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='13044' id='9' is-fixed='true' name='Total Stores' w='21726' x='43935' y='13631'>
+                  <layout-cache fixed-size-h='78' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f7faf0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='25' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='9518'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='26' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='18096'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='27' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='26674'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='28' name='Average CPI' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='12130' x='87387' y='35252'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='78' h='13044' id='10' is-fixed='true' name='Average CPI' w='21726' x='65661' y='13631'>
+                  <layout-cache fixed-size-h='78' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='5' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f7faf0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='68625' id='18' is-fixed='true' name='Total Weekly Sales by Store' w='43300' x='483' y='26668'>
+                  <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='278' h='35719' id='13' is-fixed='true' name='Monthly Sales Trend' w='43604' x='43783' y='26668'>
+                  <layout-cache minheight='213' minwidth='263' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8578' id='16' name='Monthly Sales Trend' pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' type-v2='color' w='12130' x='87387' y='940'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='255' h='32906' id='19' is-fixed='true' name='Holiday Impact' w='43604' x='43783' y='62387'>
+                  <layout-cache cell-count-w='2' has-max-size-h='true' maxheight='500' minheight='500' non-cell-size-w='145' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{554CA2A6-E998-4350-9AC8-F0C099242545}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{A0BD8261-79F7-477C-82CB-68DC46CD5BAB}' />
+    </window>
+    <window class='worksheet' name='Average Weekly Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{60808654-3C31-4C34-85A5-1648C4AD1450}' />
+    </window>
+    <window class='worksheet' name='Total Stores'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{084CB74C-05A4-4EA4-8B8D-EF67FAB676D1}' />
+    </window>
+    <window class='worksheet' name='Average CPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E4897B8-B47A-402B-997A-066D6CD66B5E}' />
+    </window>
+    <window class='worksheet' name='Monthly Sales Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{121F39C5-145A-4FDE-9FE7-25635DB39FED}' />
+    </window>
+    <window class='worksheet' name='Total Weekly Sales by Store'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B38E0173-2A7D-4FBB-AA31-B39796C44C75}' />
+    </window>
+    <window class='worksheet' name='Holiday Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{309324E7-83DD-4616-8A86-A781A248F48F}' />
+    </window>
+    <window class='worksheet' name='Temperature vs Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1964297-CF24-4A87-A7D7-DC9F0F2EB424}' />
+    </window>
+    <window class='worksheet' name='Fuel Price vs Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{573737B5-CB43-48B3-891C-CC9472AEB6ED}' />
+    </window>
+    <window class='worksheet' name='CPI vs Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DA2ED6FC-1C35-444A-B578-04532B721109}' />
+    </window>
+    <window class='worksheet' name='Unemployment vs Sales '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Quarter:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Store:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1npjtui1qsuves1a3x4ua05ul9u2].[none:Holiday_Flag:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{880377FA-D2F2-47C7-B2FB-F4ACDF139BDB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Walmart Sales Dashboard'>
+      <viewpoints>
+        <viewpoint name='Average CPI'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Average Weekly Sales'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Holiday Impact'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Sales Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Sales'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Total Stores'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Weekly Sales by Store'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{916F1716-6812-49F7-8CE1-D914A5D6CE54}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Walmart Sales Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
