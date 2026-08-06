@@ -10,12 +10,12 @@ st.set_page_config(
     layout="wide"
 )
 
-# Load model
+"""# Load model
 @st.cache_resource
 def load_model():
     return joblib.load("./model/XGBoost_model.pkl")
-
-model = load_model()
+"""
+model = joblib.load("./model/XGBoost_model.pkl")
 
 # Header
 with st.container(border=True):
