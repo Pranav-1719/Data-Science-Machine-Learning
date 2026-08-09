@@ -267,7 +267,7 @@ git clone https://github.com/Pranav-1719/Data-Science-Machine-Learning.git
 Navigate to the project directory.
 
 ```bash
-cd Data-Science-Machine-Learning/Walmart-Sales-Prediction
+cd Data-Science-Machine-Learning/Walmart-Sales-Dashboard
 ```
 
 Install dependencies.
