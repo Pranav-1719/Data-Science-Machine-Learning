@@ -80,6 +80,9 @@ Walmart-Sales-Prediction/
 ├── notebook/
 │   └── Walmart_Sales_Prediction.ipynb
 │
+├── report/
+│   └── Walmart_Sales_Analysis_Report.pdf
+│
 ├── src/
 │   ├── Dashboard_SS.png
 │   ├── SS_1.png
